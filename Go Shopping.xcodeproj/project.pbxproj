@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5352DC9C22049E8800D4BE1B /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5352DC9B22049E8800D4BE1B /* MainTabBarController.swift */; };
+		5352DC9F2204B54A00D4BE1B /* UIColor+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5352DC9E2204B54A00D4BE1B /* UIColor+Defaults.swift */; };
+		5352DCA1220A1C4A00D4BE1B /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5352DCA0220A1C4A00D4BE1B /* ListViewModel.swift */; };
 		539573C022022EF0003344B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539573BF22022EF0003344B5 /* AppDelegate.swift */; };
-		539573C222022EF0003344B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539573C122022EF0003344B5 /* ViewController.swift */; };
+		539573C222022EF0003344B5 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539573C122022EF0003344B5 /* ListViewController.swift */; };
 		539573C522022EF0003344B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 539573C322022EF0003344B5 /* Main.storyboard */; };
 		539573C722022EF2003344B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 539573C622022EF2003344B5 /* Assets.xcassets */; };
 		539573CA22022EF2003344B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 539573C822022EF2003344B5 /* LaunchScreen.storyboard */; };
 		539573D522022EF2003344B5 /* Go_ShoppingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539573D422022EF2003344B5 /* Go_ShoppingTests.swift */; };
 		539573E022022EF2003344B5 /* Go_ShoppingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539573DF22022EF2003344B5 /* Go_ShoppingUITests.swift */; };
+		539573EE220236CE003344B5 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539573ED220236CE003344B5 /* UIView+Constraints.swift */; };
+		539573F422038105003344B5 /* ListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539573F322038105003344B5 /* ListItemTableViewCell.swift */; };
+		539573F922038507003344B5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539573F822038507003344B5 /* R.generated.swift */; };
+		8823EB2A1D8C443B59E8D2F3 /* Pods_Go_ShoppingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B17269A314F1CAC738CE47 /* Pods_Go_ShoppingTests.framework */; };
+		D0460A09F24212F285FDC155 /* Pods_Go_ShoppingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81703806FE15B5E8D90573B5 /* Pods_Go_ShoppingUITests.framework */; };
+		E5C7AB164CCB568FAED54B06 /* Pods_Go_Shopping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353C74AEA23D90226DABEE32 /* Pods_Go_Shopping.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +43,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26AC0B911174C38FFD806FE5 /* Pods-Go ShoppingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Go ShoppingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Go ShoppingTests/Pods-Go ShoppingTests.release.xcconfig"; sourceTree = "<group>"; };
+		2888B64B6DD9814953C9EB5E /* Pods-Go ShoppingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Go ShoppingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Go ShoppingTests/Pods-Go ShoppingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		353C74AEA23D90226DABEE32 /* Pods_Go_Shopping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Go_Shopping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47FE68EE692E0471E9F4DB79 /* Pods-Go ShoppingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Go ShoppingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Go ShoppingUITests/Pods-Go ShoppingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5352DC9B22049E8800D4BE1B /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		5352DC9E2204B54A00D4BE1B /* UIColor+Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Defaults.swift"; sourceTree = "<group>"; };
+		5352DCA0220A1C4A00D4BE1B /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		539573BC22022EF0003344B5 /* Go Shopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Go Shopping.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		539573BF22022EF0003344B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		539573C122022EF0003344B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		539573C122022EF0003344B5 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		539573C422022EF0003344B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		539573C622022EF2003344B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		539573C922022EF2003344B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +63,14 @@
 		539573DB22022EF2003344B5 /* Go ShoppingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Go ShoppingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		539573DF22022EF2003344B5 /* Go_ShoppingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Go_ShoppingUITests.swift; sourceTree = "<group>"; };
 		539573E122022EF2003344B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		539573ED220236CE003344B5 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		539573F322038105003344B5 /* ListItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemTableViewCell.swift; sourceTree = "<group>"; };
+		539573F822038507003344B5 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		61D826DF11CF867600B74B6D /* Pods-Go Shopping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Go Shopping.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Go Shopping/Pods-Go Shopping.debug.xcconfig"; sourceTree = "<group>"; };
+		81703806FE15B5E8D90573B5 /* Pods_Go_ShoppingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Go_ShoppingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DB8E87DB0CCBC0AB369AD74 /* Pods-Go ShoppingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Go ShoppingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Go ShoppingUITests/Pods-Go ShoppingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D7B17269A314F1CAC738CE47 /* Pods_Go_ShoppingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Go_ShoppingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB370E20723A226B5A12044F /* Pods-Go Shopping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Go Shopping.release.xcconfig"; path = "Pods/Target Support Files/Pods-Go Shopping/Pods-Go Shopping.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5C7AB164CCB568FAED54B06 /* Pods_Go_Shopping.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8823EB2A1D8C443B59E8D2F3 /* Pods_Go_ShoppingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +94,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0460A09F24212F285FDC155 /* Pods_Go_ShoppingUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52287B32B506A635879202C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				353C74AEA23D90226DABEE32 /* Pods_Go_Shopping.framework */,
+				D7B17269A314F1CAC738CE47 /* Pods_Go_ShoppingTests.framework */,
+				81703806FE15B5E8D90573B5 /* Pods_Go_ShoppingUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5352DC9D2204B53800D4BE1B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				539573ED220236CE003344B5 /* UIView+Constraints.swift */,
+				5352DC9E2204B54A00D4BE1B /* UIColor+Defaults.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		539573B322022EF0003344B5 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +127,8 @@
 				539573D322022EF2003344B5 /* Go ShoppingTests */,
 				539573DE22022EF2003344B5 /* Go ShoppingUITests */,
 				539573BD22022EF0003344B5 /* Products */,
+				BDD99C9B210E57CA0B6AC1B3 /* Pods */,
+				52287B32B506A635879202C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +145,10 @@
 		539573BE22022EF0003344B5 /* Go Shopping */ = {
 			isa = PBXGroup;
 			children = (
+				5352DC9D2204B53800D4BE1B /* Utilities */,
+				539573F7220384F2003344B5 /* Resources */,
+				539573EF22038047003344B5 /* Modules */,
 				539573BF22022EF0003344B5 /* AppDelegate.swift */,
-				539573C122022EF0003344B5 /* ViewController.swift */,
 				539573C322022EF0003344B5 /* Main.storyboard */,
 				539573C622022EF2003344B5 /* Assets.xcassets */,
 				539573C822022EF2003344B5 /* LaunchScreen.storyboard */,
@@ -125,6 +175,46 @@
 			path = "Go ShoppingUITests";
 			sourceTree = "<group>";
 		};
+		539573EF22038047003344B5 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5352DC9B22049E8800D4BE1B /* MainTabBarController.swift */,
+				539573F022038075003344B5 /* List */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		539573F022038075003344B5 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				539573C122022EF0003344B5 /* ListViewController.swift */,
+				5352DCA0220A1C4A00D4BE1B /* ListViewModel.swift */,
+				539573F322038105003344B5 /* ListItemTableViewCell.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		539573F7220384F2003344B5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				539573F822038507003344B5 /* R.generated.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BDD99C9B210E57CA0B6AC1B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61D826DF11CF867600B74B6D /* Pods-Go Shopping.debug.xcconfig */,
+				EB370E20723A226B5A12044F /* Pods-Go Shopping.release.xcconfig */,
+				2888B64B6DD9814953C9EB5E /* Pods-Go ShoppingTests.debug.xcconfig */,
+				26AC0B911174C38FFD806FE5 /* Pods-Go ShoppingTests.release.xcconfig */,
+				9DB8E87DB0CCBC0AB369AD74 /* Pods-Go ShoppingUITests.debug.xcconfig */,
+				47FE68EE692E0471E9F4DB79 /* Pods-Go ShoppingUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 539573E422022EF2003344B5 /* Build configuration list for PBXNativeTarget "Go Shopping" */;
 			buildPhases = (
+				EA028D77AA92626F94C59CFA /* [CP] Check Pods Manifest.lock */,
+				539573F622038235003344B5 /* ShellScript */,
 				539573B822022EF0003344B5 /* Sources */,
 				539573B922022EF0003344B5 /* Frameworks */,
 				539573BA22022EF0003344B5 /* Resources */,
+				8EE8AEB8703F717E9976CF94 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +242,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 539573E722022EF2003344B5 /* Build configuration list for PBXNativeTarget "Go ShoppingTests" */;
 			buildPhases = (
+				11D6DC85A79525B460E077A5 /* [CP] Check Pods Manifest.lock */,
 				539573CC22022EF2003344B5 /* Sources */,
 				539573CD22022EF2003344B5 /* Frameworks */,
 				539573CE22022EF2003344B5 /* Resources */,
@@ -167,6 +261,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 539573EA22022EF2003344B5 /* Build configuration list for PBXNativeTarget "Go ShoppingUITests" */;
 			buildPhases = (
+				AC387511FECE205C00BCC4A2 /* [CP] Check Pods Manifest.lock */,
 				539573D722022EF2003344B5 /* Sources */,
 				539573D822022EF2003344B5 /* Frameworks */,
 				539573D922022EF2003344B5 /* Resources */,
@@ -251,12 +346,119 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11D6DC85A79525B460E077A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Go ShoppingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		539573F622038235003344B5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+				"",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		8EE8AEB8703F717E9976CF94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Go Shopping/Pods-Go Shopping-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Go Shopping/Pods-Go Shopping-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC387511FECE205C00BCC4A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Go ShoppingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA028D77AA92626F94C59CFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Go Shopping-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		539573B822022EF0003344B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				539573C222022EF0003344B5 /* ViewController.swift in Sources */,
+				539573F422038105003344B5 /* ListItemTableViewCell.swift in Sources */,
+				539573EE220236CE003344B5 /* UIView+Constraints.swift in Sources */,
+				5352DC9F2204B54A00D4BE1B /* UIColor+Defaults.swift in Sources */,
+				5352DC9C22049E8800D4BE1B /* MainTabBarController.swift in Sources */,
+				539573F922038507003344B5 /* R.generated.swift in Sources */,
+				539573C222022EF0003344B5 /* ListViewController.swift in Sources */,
+				5352DCA1220A1C4A00D4BE1B /* ListViewModel.swift in Sources */,
 				539573C022022EF0003344B5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +632,7 @@
 		};
 		539573E522022EF2003344B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61D826DF11CF867600B74B6D /* Pods-Go Shopping.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +651,7 @@
 		};
 		539573E622022EF2003344B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB370E20723A226B5A12044F /* Pods-Go Shopping.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +670,7 @@
 		};
 		539573E822022EF2003344B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2888B64B6DD9814953C9EB5E /* Pods-Go ShoppingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +692,7 @@
 		};
 		539573E922022EF2003344B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26AC0B911174C38FFD806FE5 /* Pods-Go ShoppingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +714,7 @@
 		};
 		539573EB22022EF2003344B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DB8E87DB0CCBC0AB369AD74 /* Pods-Go ShoppingUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +735,7 @@
 		};
 		539573EC22022EF2003344B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47FE68EE692E0471E9F4DB79 /* Pods-Go ShoppingUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
