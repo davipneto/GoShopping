@@ -10,6 +10,8 @@
 		5352DC9C22049E8800D4BE1B /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5352DC9B22049E8800D4BE1B /* MainTabBarController.swift */; };
 		5352DC9F2204B54A00D4BE1B /* UIColor+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5352DC9E2204B54A00D4BE1B /* UIColor+Defaults.swift */; };
 		5352DCA1220A1C4A00D4BE1B /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5352DCA0220A1C4A00D4BE1B /* ListViewModel.swift */; };
+		5358DAA8220B5F5F00E6E9B4 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5358DAA7220B5F5E00E6E9B4 /* ListItem.swift */; };
+		5358DAAA220C6B5A00E6E9B4 /* UITextField+RxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5358DAA9220C6B5A00E6E9B4 /* UITextField+RxSwift.swift */; };
 		539573C022022EF0003344B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539573BF22022EF0003344B5 /* AppDelegate.swift */; };
 		539573C222022EF0003344B5 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539573C122022EF0003344B5 /* ListViewController.swift */; };
 		539573C522022EF0003344B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 539573C322022EF0003344B5 /* Main.storyboard */; };
@@ -50,6 +52,8 @@
 		5352DC9B22049E8800D4BE1B /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		5352DC9E2204B54A00D4BE1B /* UIColor+Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Defaults.swift"; sourceTree = "<group>"; };
 		5352DCA0220A1C4A00D4BE1B /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		5358DAA7220B5F5E00E6E9B4 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		5358DAA9220C6B5A00E6E9B4 /* UITextField+RxSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+RxSwift.swift"; sourceTree = "<group>"; };
 		539573BC22022EF0003344B5 /* Go Shopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Go Shopping.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		539573BF22022EF0003344B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		539573C122022EF0003344B5 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +120,7 @@
 			children = (
 				539573ED220236CE003344B5 /* UIView+Constraints.swift */,
 				5352DC9E2204B54A00D4BE1B /* UIColor+Defaults.swift */,
+				5358DAA9220C6B5A00E6E9B4 /* UITextField+RxSwift.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 				539573C122022EF0003344B5 /* ListViewController.swift */,
 				5352DCA0220A1C4A00D4BE1B /* ListViewModel.swift */,
 				539573F322038105003344B5 /* ListItemTableViewCell.swift */,
+				5358DAA7220B5F5E00E6E9B4 /* ListItem.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -391,7 +397,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Go Shopping/Pods-Go Shopping-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Go Shopping/Pods-Go Shopping-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -406,7 +412,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Go Shopping/Pods-Go Shopping-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Go Shopping/Pods-Go Shopping-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AC387511FECE205C00BCC4A2 /* [CP] Check Pods Manifest.lock */ = {
@@ -453,8 +459,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				539573F422038105003344B5 /* ListItemTableViewCell.swift in Sources */,
+				5358DAAA220C6B5A00E6E9B4 /* UITextField+RxSwift.swift in Sources */,
 				539573EE220236CE003344B5 /* UIView+Constraints.swift in Sources */,
 				5352DC9F2204B54A00D4BE1B /* UIColor+Defaults.swift in Sources */,
+				5358DAA8220B5F5F00E6E9B4 /* ListItem.swift in Sources */,
 				5352DC9C22049E8800D4BE1B /* MainTabBarController.swift in Sources */,
 				539573F922038507003344B5 /* R.generated.swift in Sources */,
 				539573C222022EF0003344B5 /* ListViewController.swift in Sources */,

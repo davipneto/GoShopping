@@ -14,10 +14,6 @@ class ListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     let viewModel = ListViewModel()
-    let notes = [
-        "Eh isto",
-        "Novamente"
-    ]
     let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
@@ -26,8 +22,6 @@ class ListViewController: UIViewController {
         configureTableView()
         configureToolbar()
         configureTabBar()
-        bind()
-
     }
     
     private func configureNavigationItems() {
@@ -35,10 +29,36 @@ class ListViewController: UIViewController {
     }
     
     private func configureTableView() {
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
-        self.tableView.rowHeight = UITableView.automaticDimension
-        self.tableView.estimatedRowHeight = 22
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 22
+        
+        viewModel.items
+            .bind(to: tableView.rx.items(cellIdentifier: ListItemTableViewCell.identifier, cellType: ListItemTableViewCell.self)) {
+                (index, item, cell) in
+                cell.item = item
+            }
+            .disposed(by: disposeBag)
+        
+        tableView.rx.itemInserted
+            .bind { indexPath in
+                self.addItem()
+            }
+            .disposed(by: disposeBag)
+        
+        tableView.rx.setDelegate(self).disposed(by: disposeBag)
+        
+        tableView.rx.itemSelected
+            .map { $0.row }
+            .bind(onNext: { index in
+                self.viewModel.newItemSelected(index)
+            })
+            .disposed(by: disposeBag)
+        
+        tableView.rx.itemDeselected
+            .map { $0.row }
+            .bind(onNext: { index in self.viewModel.newItemDelesected(index)
+            })
+            .disposed(by: disposeBag)
     }
     
     func configureToolbar() {
@@ -64,27 +84,12 @@ class ListViewController: UIViewController {
         self.tabBarController?.tabBar.isHidden = false
     }
     
-    private func bind() {
-        tableView.rx.itemSelected
-            .map { $0.row }
-            .bind(onNext: { index in
-                self.viewModel.addItemSelected(index)
-            })
-            .disposed(by: disposeBag)
-        
-        tableView.rx.itemDeselected
-            .map { $0.row }
-            .bind(onNext: { index in self.viewModel.removeItemDelesected(index)
-            })
-            .disposed(by: disposeBag)
-    }
-    
     override func setEditing(_ editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
         self.tableView.setEditing(editing, animated: true)
         self.tabBarController?.tabBar.isHidden = editing
         if !editing {
-            self.viewModel.removeAllItemsSelected()
+            self.viewModel.finishEditing()
         }
     }
     
@@ -97,58 +102,22 @@ class ListViewController: UIViewController {
     }
     
     private func addItem() {
-        
+        print("item added")
     }
 
 }
 
-extension ListViewController: UITableViewDelegate, UITableViewDataSource {
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return notes.count + 1
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: ListItemTableViewCell.identifier) as! ListItemTableViewCell
-        let row = indexPath.row
-        let textLabel = cell.textLabel
-        let imageView = cell.imageView
-        if row == notes.count {
-            textLabel?.text = "Add Item"
-            textLabel?.textColor = UIColor.listItemHidden
-            imageView?.image = R.image.plus()
-            cell.accessoryType = .none
-        } else {
-            textLabel?.text = notes[row]
-            textLabel?.textColor = UIColor.listItemExplicit
-            imageView?.image = nil
-            cell.accessoryType = .disclosureIndicator
-        }
-        return cell
-    }
+extension ListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
-        if indexPath.row == notes.count {
-            addItem()
+        if viewModel.isLastItem(indexPath.row) {
             return false
         }
         return true
     }
-    
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .insert {
-            addItem()
-        }
-    }
-    
+
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
-        if indexPath.row == notes.count {
-            let cell = tableView.cellForRow(at: indexPath)
-            cell?.imageView?.image = nil
+        if viewModel.isLastItem(indexPath.row) {
             return UITableViewCell.EditingStyle.insert
         }
         return UITableViewCell.EditingStyle(rawValue: UITableViewCell.EditingStyle.insert.rawValue | UITableViewCell.EditingStyle.delete.rawValue)!

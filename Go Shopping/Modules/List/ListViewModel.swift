@@ -12,19 +12,32 @@ import RxCocoa
 
 class ListViewModel: NSObject {
     
+    let items = BehaviorRelay<[ListItem?]>(value: [
+            ListItem(title: "Teste 1"),
+            ListItem(title: "Teste 2"),
+            nil
+        ])
     let itemsSelected = BehaviorRelay<[Int]>(value: [])
     
-    func addItemSelected(_ item: Int) {
-        itemsSelected.accept(itemsSelected.value + [item])
+    func isLastItem(_ index: Int) -> Bool {
+        return index == items.value.count - 1
     }
     
-    func removeItemDelesected(_ item: Int) {
+    func addItem() {
+        
+    }
+    
+    func newItemSelected(_ index: Int) {
+        itemsSelected.accept(itemsSelected.value + [index])
+    }
+    
+    func newItemDelesected(_ index: Int) {
         var items = itemsSelected.value
-        items.removeAll { $0 == item }
+        items.removeAll { $0 == index }
         itemsSelected.accept(items)
     }
     
-    func removeAllItemsSelected() {
+    func finishEditing() {
         itemsSelected.accept([])
     }
     
